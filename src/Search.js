@@ -30,22 +30,23 @@ class Search extends React.Component {
   ), 200)
 
   onSearchChange = (searchTerm) => {
-    const results = this.state.results
-    this.reset()
-    this.setState({ searchTerm, results })
+    this.reset(true)
+    this.setState({ searchTerm })
     if (searchTerm) {
       this.setState({ loadingResults: true })
       this.searchBooks(searchTerm)
+    } else {
+      this.reset()
     }
   }
 
-  reset = () => {
-    this.setState({
-      results: [],
+  reset = (keepResults = false) => {
+    this.setState(state => ({
+      results: keepResults ? state.results : [],
       searchTerm: '',
       loadingResults: false,
       errorLoadingResults: false
-    })
+    }))
     this.props.resetErrorUpdatingBooks()
   }
 
