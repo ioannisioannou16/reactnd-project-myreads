@@ -1,10 +1,9 @@
-This is a simple bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. This is done as part of Udacity's React Fundamentals course.
+# MyReads
 
-Install dependencies:
-> npm install
+A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. This is done as part of Udacity's React Fundamentals course.
 
-Run in dev mode:
-> npm start
-
-Create a prod build:
-> npm run build
+## Installation
+1. Clone or download repository
+2. Install dependencies: `npm install`
+3. Run in dev mode: `npm start`
+4. Create a prod build: `npm run build`
