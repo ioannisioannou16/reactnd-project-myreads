@@ -1,6 +1,6 @@
 # MyReads
 
-A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read. This is done as part of Udacity's React Fundamentals course.
+A bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.
 
 ## Installation
 1. Clone or download repository
